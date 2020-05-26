@@ -1,0 +1,39 @@
+import com.tencentcloudapi.common.Credential;
+import com.tencentcloudapi.common.profile.ClientProfile;
+import com.tencentcloudapi.common.profile.HttpProfile;
+import com.tencentcloudapi.common.exception.TencentCloudSDKException;
+
+import com.tencentcloudapi.ocr.v20181119.OcrClient;
+
+import com.tencentcloudapi.ocr.v20181119.models.GeneralBasicOCRRequest;
+import com.tencentcloudapi.ocr.v20181119.models.GeneralBasicOCRResponse;
+
+//OCRÎÄ×ÖÊ¶±ð
+public class GeneralBasicOCR
+{
+    public static void main(String [] args) {
+        try{
+
+            Credential cred = new Credential("AKIDGJ6cleTcomVzC9lKXTaQ0JK7Udiz4qPh", "ua2DvPdaI5brqX7RWJJ6dvxLVP1PYR5S");
+            
+            HttpProfile httpProfile = new HttpProfile();
+            httpProfile.setEndpoint("ocr.tencentcloudapi.com");
+
+            ClientProfile clientProfile = new ClientProfile();
+            clientProfile.setHttpProfile(httpProfile);
+            
+            OcrClient client = new OcrClient(cred, "ap-guangzhou", clientProfile);
+            
+            String params = "{\"ImageBase64\":\"WWWWWWWWWW\"}";
+            GeneralBasicOCRRequest req = GeneralBasicOCRRequest.fromJsonString(params, GeneralBasicOCRRequest.class);
+            
+            GeneralBasicOCRResponse resp = client.GeneralBasicOCR(req);
+            
+            System.out.println(GeneralBasicOCRRequest.toJsonString(resp));
+        } catch (TencentCloudSDKException e) {
+                System.out.println(e.toString());
+        }
+
+    }
+    
+}

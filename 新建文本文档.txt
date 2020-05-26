@@ -1,0 +1,64 @@
+select * from MB_ACCT where rownum < 10 ;
+
+select * from CIF_CLIENT ;
+
+SELECT * from MB_AGREEMENT_LOAN WHERE rownum < 10;
+
+
+SELECT * FROM BAT_LOAN_SETTLE_NO where rownum < 10;
+
+SELECT * from MB_ACCT  where CLIENT_NO = 1000000207 ; 
+
+SELECT * FROM BAT_LOAN_SETTLE_NO;
+SELECT * FROM MB_OLD_LOAN;
+--11101030000000015
+
+
+SELECT * from MB_ACCT where ACCt_TYPE = 'M' AND ACCT_STATUS = 'A';
+查询贷款号
+
+
+update SSO_USERSTATUS set SSO_USERSTATUS.LOGINSTATUSID = 13 where SSO_USERSTATUS.USERID = 'ztxx' ;
+
+SELECT * from teller9.TL9_ORGBASIC;
+
+String ddEndDate     = reqData.getControlValueString("DD_END_DATE");
+		String creditNo      = reqData.getControlValueString("CREDIT_NO");
+		String purpose       = datamodel.getControlValueString("PURPOSE");
+		String analysis1     = datamodel.getControlValueString("ANALYSIS1");
+		String huntingStatus = datamodel.getControlValueString("HUNTING_STATUS");
+		String managerBank   = datamodel.getControlValueString("MANAGER_BANK");
+		String preRepayDeal  = datamodel.getControlValueString("PRE_REPAY_DEAL");
+		String calcTimes     = datamodel.getControlValueString("CALC_TIMES");
+		String guarantyStyle = datamodel.getControlValueString("GUARANTY_STYLE");
+		String autoRec       = datamodel.getControlValueString("AUTO_REC");
+		String arrBank       = datamodel.getControlValueString("ARR_BANK");
+		String allocSeqType  = datamodel.getControlValueString("ALLOC_SEQ_TYPE");
+		String allocSeqInt   = datamodel.getControlValueString("ALLOC_SEQ_INT");
+		String allocSeqOdi   = datamodel.getControlValueString("ALLOC_SEQ_ODI");
+		String allocSeqPri   = datamodel.getControlValueString("ALLOC_SEQ_PRI");
+		String allocSeqOdp   = datamodel.getControlValueString("ALLOC_SEQ_ODP");
+		String allocSeqFee   = datamodel.getControlValueString("ALLOC_SEQ_FEE");
+
+
+
+腾讯云服务器密码是Ztx123456
+
+DebtFlowTermImpl
+
+12104010000000057   12104010000000026 转到  12101010000000016 ( 该账户被限制转钱)
+12104010000000043 个人活期存款账户7
+
+虚拟柜员
+SSO0101-->新建虚拟柜员 设置用户角色
+   0101--> 设置金额权限 注册到核心
+   先新建尾箱-->尾箱分配或者尾箱确认
+   TB_TRAILBOX
+   查询库管员,登录库管员账号, 分配凭证
+   TB_TRAILBOX 库管员凭证入库 --> 凭证分配
+
+ACCT_TYPE 账户属性:在fm_acct_nature_def中  ,从MB_ATTR_VALUE中取值
+A-AIO账户,C结算账户, S 储蓄账户 ,T 定期,M-普通贷款,D-垫款 ,u-贴现贷款,E-委托贷款 ,Y-银团贷款, a-保函
+
+GLAC 核算的库
+ENSEMBLE 核心的库
