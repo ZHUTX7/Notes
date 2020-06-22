@@ -1,0 +1,9 @@
+1. Spring项目通过maven打成jar包 
+
+2.创建DockerFile ,书写配置信息
+
+3.在Linux上创建一个文件夹， 取名无所谓，将上述两个文件放入该文件夹中
+
+4. 在Linux上运行 docker build -t test/test8001:test 命令，创建镜像
+
+5. 在Linux上运行docker run -d -p  8001:8001 test/test8001:test 命令运行镜像
