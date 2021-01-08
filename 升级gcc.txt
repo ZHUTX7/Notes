@@ -1,0 +1,9 @@
+查看gcc版本
+gcc -v
+5.0以下版本都低了， Redis不能安装使用
+
+#升级到 5.3及以上版本
+yum -y install centos-release-scl
+yum -y install devtoolset-9-gcc devtoolset-9-gcc-c++ devtoolset-9-binutils
+
+scl enable devtoolset-9 bash
